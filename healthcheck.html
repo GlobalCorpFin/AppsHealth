@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Application Health Check Report</title>
+
+
+    <!-- <link rel="icon" type="image/x-icon" href="icons8-health-check-64.png"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            border-radius: 8px;
+            background-color:black;
+            color: white;
+            overflow-x: auto;
+
+        }
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background-image: url('cover3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+           
+            font-weight: bold;
+        }
+        
+        tr:hover {
+            background-color: #f31612;
+        }
+        
+        td.status {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        
+        td.status.healthy {
+            color: #2ecc71;
+        }
+        
+        td.status.degraded {
+            color: #f37f12;
+        }
+        
+        td.status.down {
+            color: #e74c3c;
+        }
+        
+        td.description {
+            max-width: 400px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 12px;
+}
+h1 {
+    color: #333;
+    text-align: center;
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+        
+        
+     
+    </style>
+</head>
+<body>
+   
+    <h1>Application Health Check Report</h1>
+    <div class="table-responsive">
+    <table>
+        <thead>
+            <tr>
+                <th>Application Name</th>
+                <th>Status</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pixel</td>
+            <td class="status healthy">Healthy</td>
+
+                <td>The application is functioning normally.</td>
+            </tr>
+            <tr>
+                <td>Hits</td>
+                                <td class="status degraded">Degraded</td>
+
+                <td class="description">Some features are experiencing performance issues.</td>
+            </tr>
+            <tr>
+                <td>Assets</td>
+                                <td class="status down">Down</td>
+
+                <td>The application is currently unavailable.</td>
+            </tr>
+
+
+            <tr>
+                <td>SharePoint</td>
+                <td class="status healthy">Healthy</td>
+                <td class="description">The application is currently unavailable.</td>
+            </tr>
+
+
+
+             <tr>
+                <td>GlobalCorpWebsite</td>
+                                <td class="status down">Down</td>
+                <td class="description">The application is currently unavailable.</td>
+            </tr>
+
+
+            <tr>
+                <td>HelpDesk</td>
+                <td class="status healthy">Healthy</td>
+                <td class="description">The application is currently unavailable.</td>
+            </tr>
+
+            <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
